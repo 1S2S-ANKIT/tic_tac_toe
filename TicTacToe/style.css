@@ -127,3 +127,11 @@ nav ul {
         grid-template-rows: repeat(3, 20vw)
     }
 }
+
+/* Footer  */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(245, 206, 192);
+    color: white;
+}
