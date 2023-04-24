@@ -1,1 +1,1 @@
-# tic_tac_toe.github.io
+# tic_tac_toe
