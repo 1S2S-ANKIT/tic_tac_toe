@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Exo+2:wght@200&display=swap');
+/* nav bar */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: blue;
+    color: white;
+    height: 40px;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* Game Conatiner */
+.gameContainer {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+    /*It is for the Winning Line*/
+}
+
+/* bodering */
+.box {
+    border: 3px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To remove/edit border */
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.box:hover {
+    background-color: rgb(235, 145, 235);
+}
+
+/* Game Information Container */
+.info {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.gameInfo {
+    padding: 15px 40px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Exo 2', sans-serif;
+    ;
+}
+
+.imgbox img {
+    width: 42px;
+    padding-top: 50px;
+    transition: width 1s ease-in-out;
+    padding-left: 50px;
+    height: 12vw;
+}
+
+#reset {
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 8px;
+    background-color: rgb(220, 243, 188);
+    cursor: pointer;
+}
+
+
+/* .line {
+    background-color: black;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+} */
+
+/* Responsivenessss  */
+@media screen and (max-width:800px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 34px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw)
+    }
+}
