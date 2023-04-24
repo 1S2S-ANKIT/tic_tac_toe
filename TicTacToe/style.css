@@ -85,7 +85,7 @@ nav ul {
 }
 
 .imgbox img {
-    width: 42px;
+    width: 0px;
     padding-top: 50px;
     transition: width 1s ease-in-out;
     padding-left: 50px;
